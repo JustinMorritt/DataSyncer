@@ -1,0 +1,15 @@
+[package]
+name = "datasyncer"
+description = "CLI app to sync data from a folder of excel workbooks into generated c# code"
+version = "1.0.0"
+authors = ["Justin <Jayem_@hotmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+calamine = "0.19.1"
+glob = "0.3.1"
+console = "0.15.5"
+chrono = "0.4.23"
+threadpool = "1.8.1"
