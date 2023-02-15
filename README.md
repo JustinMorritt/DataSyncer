@@ -9,6 +9,7 @@ Image showing the results of 5000defs synced from 2 workbooks and 5 sheets. over
 Running the same test on a release build
 
 ![img](!pics/release5000DefsOneFile.png)
+
 `./target/release/datasyncer.exe Sheets/ .xlsx Output/`
 
 
@@ -19,7 +20,7 @@ Running the same test on a release build
 3. Example: `datasyncer.exe Sheets .ods Output`
 4. Verbose/Debugging output: pass in fourth arg of `--verbose`
 ## Creating a Sheet
-1. Right now just use the Data.ods for reference as to how it will need to be structured
+1. Right now just use the [TesterBook.xlsx](Sheets/TesterBook.xlsx) for reference as to how it will need to be structured as well as all the functionalities that are supported
 
 ### Benchmarking
 ```rust
