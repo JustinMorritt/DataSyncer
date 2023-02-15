@@ -26,7 +26,7 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
         include:
           - os: ubuntu-latest
-            features: systemd,io_uring
+            #features: systemd,io_uring
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
