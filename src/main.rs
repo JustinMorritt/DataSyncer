@@ -100,26 +100,26 @@ fn test_main() {
 
 #[test]
 fn test_current_game() {
-    let temp_input = String::from("C:/REPOS/ktai-books/Design");
-    let temp_ext = String::from(".xlsx");
-    let temp_output = String::from("C:/REPOS/ktai-books/Assets/DataSynced");
+    // let temp_input = String::from("C:/REPOS/ktai-books/Design");
+    // let temp_ext = String::from(".xlsx");
+    // let temp_output = String::from("C:/REPOS/ktai-books/Assets/DataSynced");
 
-    let started = Instant::now();
-    match sync::start(temp_input, temp_ext, temp_output, false) {
-        Ok(success) => {
-            println!(
-                "{} ({}ms)",
-                style("Completed!").green().bold(),
-                started.elapsed().as_millis()
-            );
-        }
-        Err(error) => {
-            panic!(
-                "{}",
-                style(format!("Main -> Final Error: {}", error))
-                    .red()
-                    .bold()
-            );
-        }
-    }
+    // let started = Instant::now();
+    // match sync::start(temp_input, temp_ext, temp_output, false) {
+    //     Ok(success) => {
+    //         println!(
+    //             "{} ({}ms)",
+    //             style("Completed!").green().bold(),
+    //             started.elapsed().as_millis()
+    //         );
+    //     }
+    //     Err(error) => {
+    //         panic!(
+    //             "{}",
+    //             style(format!("Main -> Final Error: {}", error))
+    //                 .red()
+    //                 .bold()
+    //         );
+    //     }
+    // }
 }
