@@ -1,4 +1,6 @@
 # Data Syncer
+[![Rust](https://github.com/JustinMorritt/DataSyncer/actions/workflows/rust.yml/badge.svg)](https://github.com/JustinMorritt/DataSyncer/actions/workflows/rust.yml)
+[![Release](https://github.com/JustinMorritt/DataSyncer/actions/workflows/Release.yml/badge.svg)](https://github.com/JustinMorritt/DataSyncer/actions/workflows/Release.yml)
 ### Extensions supported (.xls, .xlsx, .xlsm, .xlsb, .xla, .xlam, .ods)
 
 ### Speed Test
