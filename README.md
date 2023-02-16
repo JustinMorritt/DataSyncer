@@ -1,37 +1,22 @@
 ![img](!pics/title.png)
 [![Rust](https://github.com/JustinMorritt/DataSyncer/actions/workflows/rust.yml/badge.svg)](https://github.com/JustinMorritt/DataSyncer/actions/workflows/rust.yml)
 [![Release](https://github.com/JustinMorritt/DataSyncer/actions/workflows/Release.yml/badge.svg)](https://github.com/JustinMorritt/DataSyncer/actions/workflows/Release.yml)
-### Extensions supported (.xls, .xlsx, .xlsm, .xlsb, .xla, .xlam, .ods)
+### Extensions supported ( .xls, .xlsx, .xlsm, .xlsb, .xla, .xlam, .ods )
 
 ### Speed Test
-Image showing the results of 5000defs synced from 2 workbooks and 5 sheets. over 180,000 lines of c# generated
-
-![img](!pics/test5000DefsOneFile.png)
-
-Running the same test on a release build
-
 ![img](!pics/release5000DefsOneFile.png)
 
-`./target/release/datasyncer.exe Sheets/ .xlsx Output/`
-
+Image shows the results of 5000defs synced from 2 workbooks and 5 sheets. over 180,000 lines of c# generated
 
 # How To Use
 ## Running it
 1. Run the release exe from command line.
 2. Pass in the required args  1(Sheets Folder) 2(Sheets Extension) 3(Output Folder)
 3. Example: `datasyncer.exe Sheets .ods Output`
+   1. `./target/release/datasyncer.exe Sheets/ .xlsx Output/`
 4. Verbose/Debugging output: pass in fourth arg of `--verbose`
 ## Creating a Sheet
 1. Right now just use the [TesterBook.xlsx](Sheets/TesterBook.xlsx) for reference as to how it will need to be structured as well as all the functionalities that are supported
-
-### Benchmarking
-```rust
-    let start = Instant::now();
-    println!("BENCH TEST ({}ms)", start.elapsed().as_millis());
-```
-
-# Testing Minute Folder 
-cargo run G:/REPOS/minute-mayhem/design/appendix/ .xlsx G:/REPOS/minute-mayhem/MinuteFun_Unity/Assets/DataSynced
 
 # BUGS
 - DO NOT USE degree SYMBOLS IN YOUR PARSED .CS files .. it does not parse those well will break swapping of the blocks
@@ -106,4 +91,10 @@ public static class EditorUtils
     }
 }
 
+```
+
+### Benchmarking
+```rust
+    let start = Instant::now();
+    println!("BENCH TEST ({}ms)", start.elapsed().as_millis());
 ```
